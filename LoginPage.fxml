@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="pkg2605assignment.LoginPageController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="320.0">
+         <children>
+            <TextField layoutX="76.0" layoutY="151.0" />
+            <Label layoutX="74.0" layoutY="134.0" text="Username" />
+            <Label layoutX="76.0" layoutY="200.0" text="Password" />
+            <TextField layoutX="76.0" layoutY="217.0" />
+            <CheckBox layoutX="76.0" layoutY="266.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="114.0" text="Remeber Me" />
+            <Button layoutX="145.0" layoutY="298.0" mnemonicParsing="false" text="Sign In" />
+            <Label layoutX="73.0" layoutY="338.0" text="Do not have account yet?">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="205.0" layoutY="338.0" text="Sign Up" textFill="#1938d3">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="102.0" fitWidth="86.0" layoutX="108.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Screen%20Shot%202019-10-29%20at%209.55.31%20pm.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="288.0" prefHeight="400.0" prefWidth="312.0">
+         <children>
+            <Label layoutX="14.0" layoutY="31.0" text="KNOWLEDGE" textFill="#412fb9">
+               <font>
+                  <Font name="Avenir Next Heavy Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="66.0" text="WORKER" textFill="#412fb9">
+               <font>
+                  <Font name="Avenir Next Heavy Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="119.0" layoutY="101.0" text="CLARITY" textFill="#412fb9">
+               <font>
+                  <Font name="Avenir Next Heavy Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="191.0" layoutY="136.0" text="APP" textFill="#412fb9">
+               <font>
+                  <Font name="Avenir Next Heavy Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="200.0" text="UUID:" />
+            <TextArea layoutY="237.0" prefHeight="163.0" prefWidth="312.0" text="Copyright © 2019. We, the developers of this software application, &#10;declare that it isour work towards an assessment item submitted to &#10;fulfil the requirements of INFS2605(UNSW Sydney). We declare that it&#10; is our own work, except where acknowledged,and has not been &#10;submitted for academic credit elsewhere. We acknowledge that the&#10;assessor of this item may, for the purpose of assessing this item:&#10; Reproduce this assessment item and provide a copy to another &#10;member of the University; and/or, Communicate a copy of this &#10;assessment item to a plagiarism checking service (which may then &#10;retain a copy of the assessment item on its database for the purpose &#10;of future plagiarism checking). We certify that we have read and &#10;understood the UNSW University Rules in respect of Student &#10;Academic Misconduct">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </TextArea>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
