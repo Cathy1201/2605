@@ -30,7 +30,23 @@ public class Main extends Application {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
+        Connection conn = DriverManager.getConnection("jdbc:sqlite:petsDatabase.db");
+        Statement st = conn.createStatement();
+        String createTableSql = "CREATE TABLE IF NOT EXISTS Activities "
+                + "(ID INTEGER PRIMARY KEY autoincrement, "
+                + "NAME TEXT NOT NULL, "
+                + "PHONE TEXT NOT NULL,"
+                + "CATEGORY TEXT NOT NULL, "
+                + "COLOUR TEXT NOT NULL, "   
+                + "DATETIME TEXT NOT NULL,"
+                + "DESCRIPTION TEXT NOT NULL"
+                +");";
+        st.execute(createTableSql);  
+            
+        st.close();
+        conn.close();
+        System.out.println("successful");
         launch(args);
     }
     
